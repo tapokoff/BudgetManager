@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Budget Manager
 //
-//  Created by Irishka Balakireva on 29.04.2022.
+//  Created by Daniil Balakiriev on 29.04.2022.
 //
 
 import UIKit
