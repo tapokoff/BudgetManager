@@ -195,8 +195,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-2n-6uA">
                                         <rect key="frame" x="8" y="8" width="64" height="112"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s0g-Yc-qQY">
-                                                <rect key="frame" x="0.0" y="8.5" width="64" height="63"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grocery" translatesAutoresizingMaskIntoConstraints="NO" id="s0g-Yc-qQY">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="tmv-Yl-RkJ"/>
                                                     <constraint firstAttribute="width" constant="64" id="zTF-Yl-RyQ"/>
@@ -239,8 +239,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0L-uE-dbb">
                                         <rect key="frame" x="213" y="8" width="64" height="112"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-lY-4vF">
-                                                <rect key="frame" x="0.0" y="8.5" width="64" height="63"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suitcase" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-lY-4vF">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="SIC-1w-83D"/>
                                                     <constraint firstAttribute="width" constant="64" id="U8N-tY-KZl"/>
@@ -283,8 +283,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFf-ba-yry">
                                         <rect key="frame" x="110" y="8" width="64" height="112"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-9L-4cS">
-                                                <rect key="frame" x="0.0" y="8.5" width="64" height="63"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game-console" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-9L-4cS">
+                                                <rect key="frame" x="0.0" y="8" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="64" id="nf7-e2-P2K"/>
                                                     <constraint firstAttribute="height" constant="64" id="ol5-jU-QIk"/>
@@ -338,6 +338,12 @@
                                     <constraint firstItem="Xou-2n-6uA" firstAttribute="leading" secondItem="akZ-qE-oLF" secondAttribute="leading" constant="8" id="zSP-DP-dgN"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5v-kM-Y79">
+                                <rect key="frame" x="20" y="20" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BOg-L4-LNr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -350,9 +356,11 @@
                             <constraint firstItem="GGX-Ph-19m" firstAttribute="top" secondItem="D9L-Db-1Px" secondAttribute="bottom" constant="29.5" id="A03-lS-JDt"/>
                             <constraint firstItem="D9L-Db-1Px" firstAttribute="top" secondItem="jnc-dh-QuR" secondAttribute="bottom" constant="8" symbolic="YES" id="BQq-jb-aEy"/>
                             <constraint firstItem="jnc-dh-QuR" firstAttribute="top" secondItem="BOg-L4-LNr" secondAttribute="top" constant="70" id="HUq-Vb-jJ2"/>
+                            <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="G5v-kM-Y79" secondAttribute="trailing" constant="20" id="IlC-gb-ldg"/>
                             <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="wyq-p6-jbJ" secondAttribute="trailing" constant="230" id="Ja8-lz-cLc"/>
                             <constraint firstItem="akZ-qE-oLF" firstAttribute="top" secondItem="wyq-p6-jbJ" secondAttribute="bottom" constant="30" id="Jj1-X8-5pb"/>
                             <constraint firstItem="jnc-dh-QuR" firstAttribute="leading" secondItem="BOg-L4-LNr" secondAttribute="leading" constant="20" id="JtW-kO-RXQ"/>
+                            <constraint firstItem="G5v-kM-Y79" firstAttribute="top" secondItem="BOg-L4-LNr" secondAttribute="top" constant="20" id="MyV-5z-6yL"/>
                             <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="3mF-KL-vU8" secondAttribute="trailing" constant="45" id="RuS-dj-fPS"/>
                             <constraint firstItem="Qqn-VG-H7g" firstAttribute="leading" secondItem="BOg-L4-LNr" secondAttribute="leading" constant="45" id="XSb-ft-fuX"/>
                             <constraint firstItem="Qqn-VG-H7g" firstAttribute="top" secondItem="D9L-Db-1Px" secondAttribute="bottom" constant="30" id="Ziq-z5-uPG"/>
@@ -366,6 +374,7 @@
                             <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="D9L-Db-1Px" secondAttribute="trailing" constant="20" id="izk-d1-y6Z"/>
                             <constraint firstItem="73d-1U-OIY" firstAttribute="leading" secondItem="wyq-p6-jbJ" secondAttribute="trailing" constant="85" id="mmx-1T-3Eg"/>
                             <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="64u-Vg-WeC" secondAttribute="trailing" constant="20" id="n9d-lT-n5J"/>
+                            <constraint firstItem="G5v-kM-Y79" firstAttribute="leading" secondItem="BOg-L4-LNr" secondAttribute="leading" constant="20" id="pIu-kq-WEJ"/>
                             <constraint firstItem="BOg-L4-LNr" firstAttribute="trailing" secondItem="jnc-dh-QuR" secondAttribute="trailing" constant="20" id="pst-7a-7bw"/>
                             <constraint firstItem="wyq-p6-jbJ" firstAttribute="top" secondItem="Qqn-VG-H7g" secondAttribute="bottom" constant="15" id="yHN-u7-uDE"/>
                         </constraints>
@@ -377,16 +386,17 @@
                         <outlet property="gamesLabel" destination="fQr-pH-XCR" id="2rJ-Xj-wsb"/>
                         <outlet property="groceryLabel" destination="M5H-XH-JjL" id="5Cg-8k-cfW"/>
                         <outlet property="travelLabel" destination="Yux-wj-eis" id="lVk-Lu-MtI"/>
+                        <outlet property="welcomeLabel" destination="G5v-kM-Y79" id="AFR-NY-fbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YB-Is-MDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="IHZ-To-kk8">
             <objects>
-                <viewController id="get-8t-Ecb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="get-8t-Ecb" customClass="AboutViewController" customModule="Budget_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v4h-iu-nrw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,6 +488,12 @@
                             <constraint firstItem="Tzz-pN-JmA" firstAttribute="trailing" secondItem="rhP-Vc-ZZH" secondAttribute="trailing" constant="20" id="xv4-0v-T4C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryLabel" destination="rGf-gH-GRf" id="jpy-mW-gwI"/>
+                        <outlet property="emailLabel" destination="rhP-Vc-ZZH" id="W7E-Dl-1eZ"/>
+                        <outlet property="nameLabel" destination="1WY-2N-HTM" id="UA2-a1-NBt"/>
+                        <outlet property="sexLabel" destination="uTz-jG-oe9" id="BMu-Gs-tfd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zZ-Ij-Att" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -486,7 +502,9 @@
     </scenes>
     <resources>
         <image name="credit-card" width="512" height="512"/>
-        <image name="creditcard.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="game-console" width="512" height="512"/>
+        <image name="grocery" width="512" height="512"/>
+        <image name="suitcase" width="512" height="512"/>
         <image name="wallet" width="512" height="512"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
