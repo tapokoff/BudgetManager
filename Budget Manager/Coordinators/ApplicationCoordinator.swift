@@ -37,5 +37,11 @@ class ApplcationCoordinator: Coordinator {
         navigationController.viewControllers.removeAll()
         navigationController.pushViewController(vc, animated: true)
     }
-    func showAbout(){}
+    func showAbout(login: String){
+        let vc = AboutViewController.createObject()
+        vc.coordinator = self
+        vc.viewModel = AboutViewModel()
+        vc.viewModel?.login = login
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
