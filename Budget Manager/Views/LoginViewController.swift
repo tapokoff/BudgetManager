@@ -7,15 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboardable {
     
     
     @IBOutlet weak var loginTextbox: UITextField!
     @IBOutlet weak var passwordTextbox: UITextField!
     @IBOutlet weak var label: UILabel!
-    var viewModel = ViewModel()
+    
+    var viewModel: LoginViewModel?
+    var coordinator: ApplcationCoordinator?
+    
     @IBAction func signinButtonPressed(_ sender: Any) {
-        viewModel.signinButtonPressed(login: loginTextbox.text ?? "", password: passwordTextbox.text ?? "")
+        viewModel!.signinButtonPressed(login: loginTextbox.text ?? "", password: passwordTextbox.text ?? "")
+        if viewModel!.isSignIn {
+            coordinator?.isSignIn = true
+            coordinator?.showMain(login: loginTextbox.text ?? "")
+        }
     }
 
     override func viewDidLoad() {
@@ -25,7 +32,7 @@ class ViewController: UIViewController {
     }
 
     func bindViewModel() {
-        viewModel.statusText.bind({ (statusText) in
+        viewModel!.statusText.bind({ (statusText) in
             DispatchQueue.main.async {
                 self.label.text = statusText
             }

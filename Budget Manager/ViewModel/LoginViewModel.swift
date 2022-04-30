@@ -7,8 +7,9 @@
 
 import Foundation
 
-class ViewModel{
+class LoginViewModel{
     var statusText = Dynamic("")
+    var isSignIn: Bool = false
     
     func signinButtonPressed(login: String, password: String){
         var logged = false
@@ -20,9 +21,11 @@ class ViewModel{
         }
         if logged {
             statusText.value = "Sign-in successfully"
+            isSignIn = true
         }
         else {
             statusText.value = "Sign-in failed"
+            isSignIn = false
         }
     }
 }
