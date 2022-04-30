@@ -9,6 +9,7 @@ import Foundation
 
 
 struct UserData {
+    var login: String?
     var name: String?
     var country: String?
     var email: String?
@@ -17,7 +18,7 @@ struct UserData {
 
 extension UserData {
     static var usersData = [
-        UserData(name: "Daniil Balakiriev", country: "Ukraine", email: "daniil.example@ex.org", sex: "Male"),
-        UserData(name: "Maxim Pronin", country: "Ukraine", email: "maxim.example@ex.org", sex: "Male")
+        UserData(login: "daniil", name: "Daniil Balakiriev", country: "Ukraine", email: "daniil.example@ex.org", sex: "Male"),
+        UserData(login: "maxim", name: "Maxim Pronin", country: "Ukraine", email: "maxim.example@ex.org", sex: "Male")
     ]
 }
